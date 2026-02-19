@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reconbot"
+version = "0.1.0"
+description = "Automated recon tool with nmap and gobuster"
+authors = [{ name = "Polat" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["reconbot*"]
+
+[project.scripts]
+reconbot = "reconbot.cli:main"
